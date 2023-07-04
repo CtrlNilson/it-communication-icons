@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>IT-Kommunikation</title>
+    <script src="html2canvas.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="icon-container">
+            <img id="bike" class="icon" src="./assets/bike.png" alt="Fahrrad fahren">
+            <div class="slider-container bike-container">
+                <div class="color-block-start"></div>
+                <div id="bike-slider" class="progress-slider"></div>
+                <div class="color-block-end"></div>
+            </div>
+        </div>
+        <div class="icon-container">
+            <img id="walk" class="icon" src="./assets/walk_2.png" alt="Gehen">
+            <div class="slider-container walk-container">
+                <div class="color-block-start"></div>
+                <div id="walk-slider" class="progress-slider"></div>
+                <div class="color-block-end"></div>
+            </div>
+        </div> 
+        <div class="icon-container">
+            <img id="car" class="icon" src="./assets/car.png" alt="Auto fahren">
+            <div class="slider-container car-container">
+                <div class="color-block-start"></div>
+                <div id="car-slider" class="progress-slider"></div>
+                <div class="color-block-end"></div>
+            </div>
+        </div>        
+        <div class="icon-container">
+            <img id="train" class="icon" src="./assets/train.png" alt="Bahn fahren">
+            <div class="slider-container train-container">
+                <div class="color-block-start"></div>
+                <div id="train-slider" class="progress-slider"></div>
+                <div class="color-block-end"></div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------------------------- -->
+
+        <div class="controll-container">
+            <div id="percent-bike" class="percent-display">
+                0%
+            </div>
+            <div>
+                <input type="range" id="bike-controll" name="bike-input" class="controll-item" 
+                min="0" max="100" value="0" step="any">
+<!--                 <label for="bike-controll">Fahrrad</label>
+ -->            </div>
+            <div>
+                <input type="color" id="bike-color" name="bike-color-input" class="color-item"
+                       value="#3CECA8">
+            </div>
+        </div>
+        <div class="controll-container">
+            <div id="percent-walk" class="percent-display">
+                0%
+            </div>
+            <div>
+                <input type="range" id="walk-controll name="walk-input" class="controll-item" 
+                min="0" max="100" value="0" step="any">
+<!--                 <label for="car-controll">Zu Fuß</label>
+ -->            </div>
+            <div>
+                <input type="color" id="walk-color" name="walk-color-input" class="color-item"
+                       value="#f59114">
+            </div>
+        </div>
+        <div class="controll-container">
+            <div id="percent-car" class="percent-display">
+                0%
+            </div>
+            <div>
+                <input type="range" id="car-controll" name="car-input" class="controll-item" 
+                min="0" max="100" value="0" step="any">
+<!--                 <label for="car-controll">Auto</label>
+ -->            </div>
+            <div>
+                <input type="color" id="car-color" name="car-color-input" class="color-item"
+                       value="#7AC8FF">
+            </div>
+        </div>
+        <div class="controll-container">
+            <div id="percent-train" class="percent-display">
+                0%
+            </div>
+            <div>
+                <input type="range" id="train-controll" name="train-input" class="controll-item"
+                min="0" max="100" value="0" step="any">
+<!--                 <label for="train-controll">Bahn</label>
+ -->            </div>
+            <div>
+                <input type="color" id="train-color" name="train-color-input" class="color-item"
+                       value="#64c3d7">
+            </div>
+        </div>
+    </div>
+    <button id="export">Icons exportieren</button>
+</body>
+<script src="index.js"></script>
+</html>
